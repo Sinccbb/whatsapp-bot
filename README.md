@@ -36,3 +36,5 @@ Siapkan API Gemini terlebih dahulu
    ```
 
 nb : Kadang ada error di API key yang berasal dari penamaan ai model
+
+Setelah install nanti akan muncul folder 'somem' dan 'gambar', isi 'somem' dengan file suara terserah kalian, dan 'gambar' juga file gambar terserah kalian
