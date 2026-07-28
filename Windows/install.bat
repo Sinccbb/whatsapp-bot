@@ -1,5 +1,6 @@
 @echo off
 chcp 65001 >nul
+setlocal enabledelayedexpansion
 :: Pindah ke direktori utama proyek (folder induk dari script)
 cd /d "%~dp0\.."
 
@@ -56,7 +57,7 @@ if not exist "hall_of_fame.json" (
 if not exist ".env" (
     echo 🔑 Pengaturan GEMINI API KEY
     set /p API_KEY="Masukkan GEMINI_API_KEY kamu: "
-    echo GEMINI_API_KEY=%API_KEY% > .env
+    echo GEMINI_API_KEY=!API_KEY! > .env
     echo ✅ File .env berhasil dibuat dengan API Key kamu!
 ) else (
     echo ✅ File .env sudah ada.
